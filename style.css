@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     transition: transform 0.5s ease;
     margin-bottom: 20px;
 }
@@ -164,6 +165,7 @@ body{
 p{
     display: flex;
     align-items: start;
+    justify-content: center;
     color: #59382C;
     font-family: "vibur";
     font-size: 1.5em;
@@ -171,14 +173,14 @@ p{
 }
 
 .cartaI {
-    height: 7em;
-    width: 15em;
-    margin-top: 20px;
+    position: absolute;
+    top: 100%;
+    width: 25em;
+    margin-top: 10px;
     opacity: 0;
     background-color: #F0E6E9;
     color: #59382C;
     box-shadow:  -10px 15px 10px #0000003a;
-    /* padding: 10px 20px; */
     border-radius: 10px;
     text-align: center;
     display: none;
@@ -190,4 +192,30 @@ p{
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+
+.cont{
+    font-size: 1.10em;
+}
+
+#pie, #reloj{
+    color: #B83556;
+}
+
+#c1, #c3{
+    top: 70%;
+}
+
+#fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 7.5em;
+    width: auto;
+    border-radius: 10%;
 }
